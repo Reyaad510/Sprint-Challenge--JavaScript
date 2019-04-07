@@ -1,0 +1,63 @@
+
+
+
+
+
+ 1. Describe the biggest difference between .forEach & .map.
+    .forEach takes a callback as it's only argument and iterates over every item in the array and calls the callback on it. forEach is good when want to execute logic without getting a new array
+    .map used when we want to change every item in an array in the same way.
+    .map is good when you want to create a new array
+
+
+
+
+
+
+
+ 2. What is the difference between a function and a method?
+
+    A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed.
+    A method is a piece of code that is called by a name that is associated with an object. In most respects it is identical to a function except for two key differences
+
+
+
+
+
+
+
+
+
+3. What is closure?
+
+    A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain. The closure has three scope chains: it has access to its own scope — variables defined between its curly brackets, it has access to the outer function’s variables, and it has access to the global variables.
+
+
+
+
+
+
+4. Describe the four rules of the 'this' keyword.
+
+- Principle 1: Window/Global Object Binding
+   When in global scope, value of "this" will be window/console Object;
+
+ - Principle 2: Implicit Binding
+   Whenever a function is called by a preceding dot, the object before that dot is "this".
+
+ - Principle 3: New(building new ojbects) binding
+   Whenever a constructor function is used, "this" refers to the specific instance of the object that is created and returned by the constructor function. A constructor function is a function that returns an object. It's an object creator.
+
+ - Principle 4: Explicit Binding 
+   Whenever Javascript's call or apply method is used, "this" is explicitly defined. Explicit utilizes call, apply, and bind methods.
+
+
+
+
+
+
+
+
+
+5. Why do we need super() in an extended class?
+
+     The super keyword is used to access and call functions on an object's parent.
